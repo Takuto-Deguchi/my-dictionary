@@ -1,11 +1,11 @@
 // {
 //   "development": {
-//     "username": "cqdchkuqwioyxi",
-//     "password": "a5bb3a7e4ce9abc103f4a67a962af02f6312c8d88569d2335d3374be5aedb311",
-//     "database": "d155fe0o77tnnp",
-//     "host": "ec2-52-200-215-149.compute-1.amazonaws.com",
+//     "username": "",
+//     "password": "",
+//     "database": "",
+//     "host": "",
 //     "port": "5432",
-//     "dialect": "postgres",
+//     "dialect": "",
 //     "dialectOptions": {
 //       "ssl": {
 //         "require": true,
