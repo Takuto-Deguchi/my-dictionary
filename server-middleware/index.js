@@ -3,7 +3,6 @@ const logger = require('morgan')
 const app = express()
 const createError = require('http-errors')
 const cookieParser = require('cookie-parser')
-
 app.use(cookieParser())
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))

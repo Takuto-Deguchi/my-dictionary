@@ -1,6 +1,7 @@
-import knex from '../database/main'
+//import knex from '../database/main'
 import express from 'express'
 const router = express.Router()
+const User = require('../DB/models').User
 
 // router.post('/measuredData', async (req, res, next) => {
 //   try {
@@ -28,10 +29,11 @@ const router = express.Router()
 
 router.get('/dbtest', async (req, res, next) => {
   try {
-    const name = await knex('devices').select('*');
-    res.status(200).json({ ok: true, statusText: 'ok.', body: name })
+    User.findAll().then((users) => {
+      res.send(users)
+    })
   } catch (err) {
-    res.status(400).json({ ok: false, statusText: err?.message || "Unknown Error" })
+    res.status(400).json({ ok: false, statusText: err?.message || 'Unknown Error' })
   }
 })
 
