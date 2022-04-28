@@ -31,7 +31,6 @@
 
 require('dotenv').config()
 
-console.log(process.env.DB_HOST)
 config = {
   dialect: 'postgres',
   host: process.env.DB_HOST,
